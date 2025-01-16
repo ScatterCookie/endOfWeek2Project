@@ -8,12 +8,19 @@
     <title>Image Slide Show</title>
   </head>
   <body>
-    <div class="slideShow">
-      <div class="myImages">
-        <div class="imageNumber">1 / 4</div>
-        <img src="image1.png" alt="image1.png" />
-        <div class="text">Caption Here</div>
-      </div>
-    </div>
+    <div id="image-box" class="image-box"></div>
+    <button
+      class="image-box imageBoxHideButton"
+      id="imageBoxHideButton"
+      aria-label="Close Image Gallery"
+    >
+      ↴
+    </button>
   </body>
+  <section>
+    <div id="display"></div>
+    <button id="next" aria-label="Go to the next image">⪼</button>
+    <button id="previous" aria-label="Got to previous image">⪻</button>
+    <div id="announcer" aria-live="polite" class="visibility-hidden"></div>
+  </section>
 </html>
