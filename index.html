@@ -4,23 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script type="module" src="app/js"></script>
+    <script type="module" src="app.js" defer></script>
     <title>Image Slide Show</title>
   </head>
   <body>
-    <div id="image-box" class="image-box"></div>
-    <button
-      class="image-box imageBoxHideButton"
-      id="imageBoxHideButton"
-      aria-label="Close Image Gallery"
-    >
-      ↴
-    </button>
+    <h1 class="flex-content-center"></h1>
+
+    <div id="main" class="main flex-container">
+      <img id="main-img-display" class="main-d flex-direction-column"></img>
+      <h1 id="img-description" class="img-desc flex-direction-column">image</h1>
+    </div>
+
+    <div
+      id="thumbnail-container"
+      class="flex-container flex-content-center scroll"
+    ></div>
+    <button id="previous" class="" aria-label="Previous Image">⋘</button>
+    <button id="next" class="" aria-label="Next Image">⋙</button>
   </body>
-  <section>
-    <div id="display"></div>
-    <button id="next" aria-label="Go to the next image">⪼</button>
-    <button id="previous" aria-label="Got to previous image">⪻</button>
-    <div id="announcer" aria-live="polite" class="visibility-hidden"></div>
-  </section>
 </html>
